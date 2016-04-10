@@ -39,10 +39,12 @@ document.addEventListener("DOMContentLoaded", function() {
    canvas.width = width;
    canvas.height = height;
 
-
-   $("#clear").click(function(){
-      socket.emit('clear_canvas', {});
-   });
+$(window).keypress(function (e) {
+  if (e.keyCode === 0 || e.keyCode === 32) {
+    e.preventDefault()
+    socket.emit('clear_canvas', {});
+  }
+})
 
    // register mouse event handlers
    canvas.onmousedown = function(e){ mouse.click = true; };
@@ -68,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
       context.lineWidth = 10;
    });
 
-      socket.on('clear_canvas', function (data) {
+   socket.on('clear_canvas', function (data) {
       context.clearRect(0, 0, canvas.width, canvas.height);
    });
    
