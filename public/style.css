@@ -1,0 +1,30 @@
+* { 
+   margin: 0;
+   padding: 0;
+}
+body, html{
+   width: 100%;
+   height: 100%;
+}
+/*#canvas {
+   display: block;
+}*/
+
+video{
+	position:absolute;
+	top:10;
+	left:10;
+	width:100%;
+	height: 100%;
+}
+
+canvas{
+	position:absolute;
+	top:10;
+	left:10;
+	/*border: 10px solid #ddd;*/
+}
+
+#clear{
+	float:left;
+}
