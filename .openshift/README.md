@@ -1,3 +1,4 @@
-For information about .openshift directory, consult the documentation:
+Visualization Tool for the SCIPR Project
 
-http://openshift.github.io/documentation/oo_user_guide.html#the-openshift-directory
+VIRTUAL AGENTS TEAM
+RYAN D, SU B, SAM G, IAN G, BEN B
