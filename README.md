@@ -1,3 +1,4 @@
-The OpenShift `nodejs` cartridge documentation can be found at:
+Visualization Tool for the SCIPR Project
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
+VIRTUAL AGENTS TEAM
+RYAN D, SU B, SAM G, IAN G, BEN B
