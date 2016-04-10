@@ -3,9 +3,12 @@ var express = require('express'),
     http = require('http').createServer(app),
     io = require('socket.io').listen(http);
 
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
-http.listen(8080);
-app.use(express.static(__dirname + '/public'));
+
+http.listen(server_port, server_ip_address);
+app.use(express.static(path.join(__dirname, 'public'))); 
 console.log("Server running on 127.0.0.1:8080");
 
 // array of all lines drawn
